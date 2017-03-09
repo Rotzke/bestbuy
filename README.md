@@ -1,4 +1,4 @@
-# Simple BestBuy full data archiver
+# Simple BestBuy archiver
 Parsing using BestBuy API complete data on:
 - Categories
 - Stores
