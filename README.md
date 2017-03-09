@@ -1,7 +1,7 @@
-# bestbuy
-Full data parser for BestBuy API:
+# Simple BestBuy full data arhiver
+Parsing using BestBuy API complete data on:
 - Categories
 - Stores
 - Products
 
-Everything downloaded into RAM and converted to CSV files.
+Everything is been downloaded into RAM and converted to CSV files.
