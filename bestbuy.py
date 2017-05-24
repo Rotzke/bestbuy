@@ -9,9 +9,8 @@ import csv
 import json
 import os
 
-
-from modules import requests
-from modules.clint.textui import progress
+import requests
+from clint.textui import progress
 
 API_KEY = ''
 sources = ['categories', 'stores', 'products']
