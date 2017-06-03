@@ -52,8 +52,9 @@ def get_data(sources, timing):
                         writer.writeheader()
                     for item in z.namelist():
                         with z.open(item) as json_data:
-                            [writer.writerow(i) for i in
-                             json.loads(json_data.read().decode('utf-8'))]
+                            for i in\
+                             json.loads(json_data.read().decode('utf-8')):
+                                writer.writerow(i)
         sleep(1)
 
 
