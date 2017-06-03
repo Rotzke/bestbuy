@@ -5,6 +5,7 @@ from zipfile import ZipFile
 from time import time, sleep
 from datetime import datetime
 from contextlib import closing
+import logging
 import csv
 import json
 import os
@@ -15,6 +16,7 @@ from clint.textui import progress
 API_KEY = ''
 sources = ['categories', 'stores', 'products']
 start_ts = datetime.fromtimestamp(time()).strftime('%Y-%m-%dT%H:%M:%S')
+logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.INFO)
 
 
 def get_data(sources, timing):
@@ -24,7 +26,7 @@ def get_data(sources, timing):
         try:
             os.makedirs(path)
         except OSError:
-            print('Check filesystem permissions!')
+            logging.critical('Check filesystem permissions!')
             exit(1)
     for source in sources:
         print('Parsing {}... '.format(source))
