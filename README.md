@@ -7,4 +7,4 @@ Parsing using BestBuy API complete data on:
 - Stores
 - Products
 
-Everything is been downloaded into RAM and converted to CSV files.
+Everything keeps in RAM and converts into CSV files.
