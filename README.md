@@ -8,3 +8,5 @@ Parsing using BestBuy API complete data on:
 - Products
 
 Everything keeps in RAM and converts into CSV files.
+
+[![forthebadge](http://forthebadge.com/images/badges/contains-technical-debt.svg)](http://forthebadge.com)
